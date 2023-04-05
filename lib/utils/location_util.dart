@@ -1,4 +1,4 @@
-const googleApiKey = 'AIzaSyAdD9NBAhmHV_2IyMYBGKI2ybke33Yb1fc';
+const googleApiKey = 'teste';
 
 class LocationUtil {
   static String generateLocationPreviewImage({
