@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../providers/great_places.dart';
 import '../widgets/image_input.dart';
+import '../widgets/location_input.dart';
 
 class PlaceFormScreen extends StatefulWidget {
   const PlaceFormScreen({super.key});
@@ -17,7 +18,7 @@ class _PlaceFormScreenState extends State<PlaceFormScreen> {
   final _titleController = TextEditingController();
   File? _pickedImage;
 
-  void _selectImage(File pickedImage){
+  void _selectImage(File pickedImage) {
     _pickedImage = pickedImage;
   }
 
@@ -57,6 +58,8 @@ class _PlaceFormScreenState extends State<PlaceFormScreen> {
                     ),
                     const SizedBox(height: 12),
                     ImageInput(_selectImage),
+                    const SizedBox(height: 12),
+                    const LocationInput(),
                   ],
                 ),
               ),

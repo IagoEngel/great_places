@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    print('aaaaa');
     return ChangeNotifierProvider(
       create: (_) => GreatPlaces(),
       child: MaterialApp(
