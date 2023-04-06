@@ -37,6 +37,7 @@ dependencies:
   sqflite:
   location:
   google_maps_flutter:
+  http:
 
 
   # The following adds the Cupertino Icons font to your application.

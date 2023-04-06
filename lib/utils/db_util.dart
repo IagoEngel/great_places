@@ -10,7 +10,7 @@ class DBUtil {
       version: 1,
       onCreate: (db, version) {
         return db.execute(
-          'CREATE TABLE places (id TEXT PRIMARY KEY, title TEXT, image TEXT)',
+          'CREATE TABLE places (id TEXT PRIMARY KEY, title TEXT, image TEXT, latitude REAL, longitude REAL, address TEXT)',
         );
       },
     );
@@ -26,7 +26,7 @@ class DBUtil {
     );
   }
 
-  static Future<List<Map<String, dynamic>>> getDatabase(String table) async {
+  static Future<List<Map<String, dynamic>>> getData(String table) async {
     final db = await DBUtil.database();
     
     return db.query(table);
