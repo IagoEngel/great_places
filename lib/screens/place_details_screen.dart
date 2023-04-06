@@ -38,6 +38,7 @@ class PlaceDetailsScreen extends StatelessWidget {
           ElevatedButton.icon(
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(
+                fullscreenDialog: true,
                 builder: (_) => MapScreen(
                   isReadOnly: true,
                   initialLocation: place.location!,
